@@ -405,7 +405,13 @@
     </div>
 
     <div class="title-header">
-        <h1>断箭神人卡组肉鸽 - 改 by Zola</h1>
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+            <h1>断箭神人卡组肉鸽 - 改 by Zola</h1>
+            <!-- 新增：版本和更新时间显示在标题下方 -->
+            <div id="meta-info" style="display:none; text-align:center; font-size:0.8rem; color:#66fcf1; margin-top:6px; font-family:'Rajdhani', sans-serif; letter-spacing:1px;">
+                <!-- 内容由 JS 填充 -->
+            </div>
+        </div>
     </div>
 
     <div class="control-bar">
@@ -686,6 +692,21 @@
                 dom.status.textContent = `警告：部队池过小 (${totalUnits} 张)`;
             } else {
                 dom.status.textContent = `数据加载完毕! Buff:${POOLS.buffs.length}, Debuff:${POOLS.debuffs.length}, Units:${totalUnits}`;
+            }
+
+            // 新增：显示 metadata 信息
+            if (data.metadata) {
+                let metaStr = '';
+                if (data.metadata.version) metaStr += `JSON v${data.metadata.version}`;
+                if (data.metadata.last_updated) {
+                    if (metaStr) metaStr += ' , ';
+                    metaStr += `${data.metadata.last_updated}`;
+                }
+                if (metaStr) {
+                    const metaEl = document.getElementById('meta-info');
+                    metaEl.textContent = metaStr;
+                    metaEl.style.display = 'block';
+                }
             }
 
             // dom.fileInput.parentElement.style.display = 'none'; // 成功加载后在 autoLoad 中统一处理
