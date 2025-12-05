@@ -1108,10 +1108,8 @@
                     method: "POST",
                     headers: { "Content-Type": "application/json", "Authorization": `Bearer ${AI_API_KEY}` },
                     body: JSON.stringify({
-                        model: "gpt-4.1-mini",
-                        messages: [{"role":"user", "content": prompt}],
-                        max_tokens: 15,
-                        temperature: 0.8
+                        model: "deepseek-v3.2",
+                        messages: [{"role":"user", "content": prompt}]
                     })
                 });
                 const data = await res.json();
@@ -1133,3 +1131,4 @@
 </body>
 
 </html>
+
