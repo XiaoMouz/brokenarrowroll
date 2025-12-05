@@ -1,4 +1,10 @@
 {
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2025-12-05",
+    "author": "Zola & all",
+    "signature": "SHA256:deck_v1_official"
+  },
   "global_buffs": [
     {"title": "贫穷之始", "content": "双方以500pt开始游戏", "author": "曾经是暴白的暴黑"},
     {"title": "富裕之初", "content": "双方以1500pt开始游戏", "author": "曾经是暴白的暴黑"},
@@ -17,10 +23,19 @@
     {"title": "显卡攻击", "content": "本局地图为冰雪城堡或寒水港", "author": "千年夜雨"},
     {"title": "漫漫长夜", "content": "本局为夜晚", "author": "土豆车长"},
     {"title": "没有足够晶矿", "content": "收入250，维护费双倍", "author": "江东老乔"},
-    {"title": "合作模式", "content": "双方每队选一人只能带侦察栏、支援栏、直升机栏。其他人不能带任何侦察栏、支援栏。最优先级覆盖", "author": "zola"},
-    {"title": "无线电静默", "content": "双方每队都需要10架以上有sead导弹的单位", "author": "zola"}
+    {"title": "合作模式", "content": "每队选一个人只能出防空，补给载具和补给。其他四个人不能出任何补给。最优先级覆盖", "author": "zola"},
+    {"title": "能当一辈子炮蛆吗", "content": "本局地图为加列宁格勒", "author": "纹眉山羊"},
+    {"title": "牢狱生活", "content": "本局地图为考纳斯水坝", "author": "千年夜雨"},
+    {"title": "静水监狱", "content": "本局不冲突的全局debuff全部生效", "author": "千年夜雨"},
+    {"title": "楚河汉界", "content": "本局地图中间必须有河（考纳斯水坝，蜿蜒之河，风啸湾，叶尔加瓦，冰雪城堡，加里宁格勒）", "author": "千年夜雨"},
+    {"title": "城市人", "content": "本局地图为城市战（加里宁格勒，克莱佩达裂谷，切尔尼亚霍夫斯克，风啸湾，叶尔加瓦）", "author": "千年夜雨"},
+    {"title": "海岛奇兵", "content": "本局地图为波罗的斯克半岛", "author": "千年夜雨"},
+    {"title": "特别军事行动", "content": "本局地图为里加机场或契卡洛夫斯克空军基地", "author": "千年夜雨"},
+    {"title": "good morning，越南", "content": "本局地图为鲁达森林或蜿蜒之河", "author": "千年夜雨"},
+    {"title": "史密斯专员", "content": "本局游戏初始资源为0pt", "author": "纹眉山羊"},
+    {"title": "经济特区", "content": "双方起始资源1200，收入350，维护费2，占点收益150", "author": "zola2"}
   ],
-  "global_debuffs": [
+  "team_debuffs": [
     {"title": "不许当蛆！", "content": "本方指定一人的支援栏不可用", "author": "曾经是暴白的暴黑"},
     {"title": "步兵万岁！", "content": "本方有一人要携带20卡以上的步兵", "author": "曾经是暴白的暴黑"},
     {"title": "装甲洪流", "content": "本方总计有超过40辆坦克和步战车", "author": "曾经是暴白的暴黑"},
@@ -47,8 +62,18 @@
     {"title": "填线宝宝与蛆", "content": "本方指定两人步兵分数大于等于3000，三人支援分数大于等于2500", "author": "千年夜雨"},
     {"title": "俄联邦曾经的伟大", "content": "本方至少要有4架TU22M3", "author": "土豆车长"},
     {"title": "诋毁默认卡组", "content": "本方卡组中有一栏不能出现默认卡组中出现的单位", "author": "塞德利茨"},
-    {"title": "我躲起来啦", "content": "本方只能出隐身飞机，，，如果同时选择【可见度良好】则融合为：【毁灭吧】：本方飞机只能出核弹飞机", "author": "Zola"},
-    {"title": "可见度良好", "content": "本方只能出非隐身飞机，，，如果同时选择【我躲起来啦】则融合为：【毁灭吧】：本方飞机只能出核弹飞机", "author": "Zola"}
+    {"title": "刺客信条", "content": "本方有一人无法使用隐蔽值超过1的非步兵单位", "author": "86"},
+    {"title": "lucky~", "content": "什么都不会发生", "author": "86"},
+    {"title": "折光镜", "content": "本方无法携带具有激光指示能力的地面载具和直升机", "author": "86"},
+    {"title": "没有未来", "content": "本方至少有2人使用美团空降专精，且禁止将携带的Airborne升级为NGSW", "author": "86"},
+    {"title": "精确射击", "content": "本方指定1人必须携带12队以上带有射手步枪或者狙击枪的班组", "author": "86"},
+    {"title": "惊天爽蛆", "content": "本方指定1人携带同一国家的所有弹道导弹发射器，其他4人每人携带至少2架反辐射飞机", "author": "千年夜雨"},
+    {"title": "有心无力", "content": "本方至多有1人可以携带反辐射机", "author": "老乔"},
+    {"title": "屋顶漏雨", "content": "本方至多有2人可以携带重防", "author": "老乔"},
+    {"title": "天气晴朗", "content": "本方所有人禁止携带台风小车、风暴导弹车、冰雹和龙卷风火箭炮", "author": "86"},
+    {"title": "狂风暴雨", "content": "本方所有人禁止携带拥有两栖能力的载具", "author": "86"},
+    {"title": "lord?kord!!!", "content": "本方所有人共需装备超过28具kord HMG", "author": "86"},
+    {"title": "老干妈爱好者", "content": "本方所有人共需装备超过36具M2重机枪", "author": "曾经是暴白的暴黑"}
   ],
   "recon": [
     {"title": "机械哪里比得上目力雷达", "content": "禁止携带任何侦查无人机", "author": "Alkaid"},
@@ -65,9 +90,11 @@
     {"title": "VDV没有懦夫", "content": "使用VDV专精，只能携带无人机或VDV单位", "author": "OuO"},
     {"title": "没有狙怎么你了，，，", "content": "使用摩步专精，携带GRU AA和伏击小队，且不得携带任何狙击手", "author": "大大的鸟"},
     {"title": "阿富汗战争", "content": "使用空特专精，只能携带武装无人机和狙击手，且武装无人机必须有且只有对地打击挂载", "author": "大大的鸟"},
-    {"title": "信息战", "content": "无人机数量大于等于4", "author": "千年夜雨"},
-    {"title": "强壮的狙", "content": "所有侦察兵必须拥有反甲能力", "author": "Zola"},
-    {"title": "要饭", "content": "求求你给我一个三连吧", "author": "云洁"}
+    {"title": "信息战", "content": "携带至少4架无人机", "author": "千年夜雨"},
+    {"title": "顺手的事", "content": "携带装备12.7mm口径反器材狙击枪的狙击手", "author": "千年夜雨"},
+    {"title": "鱼人夜行者", "content": "使用海部专精，携带4队PDSS", "author": "86"},
+    {"title": "海摩爱好者", "content": "使用海部专精，至少携带6辆升级了瓜园-U炮塔的BTR90M", "author": "???"},
+    {"title": "我说中门对狙你耳朵聋吗", "content": "使用海部专精，携带4队升级为火力支援小组的VMF", "author": "曾经是暴白的暴黑"}
   ],
   "infantry": [
     {"title": "垃圾海", "content": "所有携带的步战车价格不能超过100分", "author": "塞德利茨"},
@@ -83,7 +110,7 @@
     {"title": "空投手令", "content": "至少携带6队架设单位", "author": "MIe"},
     {"title": "哔哔打车", "content": "携带的所有步战车不能低于80速", "author": "Azure"},
     {"title": "闪电战", "content": "只能携带轮式步战车", "author": "千年夜雨"},
-    {"title": "鲍黑的祝福", "content": "禁止携带任何非步战运兵车", "author": "三分糖"},
+    {"title": "鲍黑的祝福", "content": "禁止携带任何运兵车（可以携带步战车）", "author": "三分糖"},
     {"title": "阿甘快跑！", "content": "该卡没有任何限制，祝你好运", "author": "grc"},
     {"title": "削减军费", "content": "携带的步兵无法进行花费点数的升级", "author": "MIe"},
     {"title": "奏拉之神的庇护", "content": "使用斯崔克专精，其中斯崔克专精的步兵只能携带troopers和troopers AA", "author": "谁啊我真服了"},
@@ -104,7 +131,17 @@
     {"title": "2282老师快速行动", "content": "使用空降专精，且只能携带isv作为唯一步战车", "author": "千年夜雨"},
     {"title": "IFV不存在的世界", "content": "步兵不允许携带对应的步战车", "author": "土豆车长"},
     {"title": "猪的战术I", "content": "使用特种专精，只能携带war pig作为运兵载具", "author": "塞德里茨"},
-    {"title": "冲，冲，冲刺，冲", "content": "俄联邦：只可携带80速以上运兵载具；美团只可携带90速以上的步战载具", "author": "塞德里茨"}
+    {"title": "冲，冲，冲刺，冲", "content": "只能携带速度超过80km/h的运兵载具", "author": "塞德里茨"},
+    {"title": "正常的俄联邦", "content": "携带超过12辆bmp3并至少有2辆升级时代炮塔", "author": "86"},
+    {"title": "过去", "content": "使用海部专精，携带至少6队船锚兵", "author": "86"},
+    {"title": "掌握未来", "content": "使用空降专精，携带至少6队NGSW", "author": "86"},
+    {"title": "节俭", "content": "禁止携带任何使用次抛火箭筒的步兵", "author": "86"},
+    {"title": "一寸长一寸弱", "content": "使用特战专精，携带3个远射三角洲和至少6队远射游骑兵", "author": "86"},
+    {"title": "帅是一辈子的！", "content": "使用海部专精，携带6队山地兵", "author": "86"},
+    {"title": "老兵已死", "content": "使用马润专精，携带6队马润预备役", "author": "86"},
+    {"title": "马润专精一定要有马润", "content": "使用马润专精，但禁止携带任何名称中包含Marine的步兵单位", "author": "大大的鸟"},
+    {"title": "VDV没有懦夫", "content": "使用VDV专精，只能携带VDV单位", "author": "OuO"},
+    {"title": "轻装步兵", "content": "步兵栏只能携带价格低于80的步兵", "author": "zola2"}
   ],
   "tank": [
     {"title": "装甲无用论者", "content": "禁止携带任何扛穿超过120mm的载具", "author": "来咬我呀"},
@@ -137,7 +174,10 @@
     {"title": "阿富汗战争", "content": "只能携带T-72B1、M1A2 Abrams和M1A2 HC作为坦克", "author": "千年夜雨"},
     {"title": "拆楼", "content": "携带至少4辆拥有不低于130mm口径主炮的坦克", "author": "千年夜雨"},
     {"title": "原厂货", "content": "坦克栏只能使用初始的配置", "author": "土豆车长"},
-    {"title": "太想让别人痛所以全点防御力了", "content": "携带的所有坦克都需要进行完全的火力升级而不进行任何防护升级", "author": "AMMAR"}
+    {"title": "太想让别人痛所以全点防御力了", "content": "携带的所有坦克都需要进行完全的火力升级而不进行任何防护升级", "author": "AMMAR"},
+    {"title": "红色电视", "content": "使用海部专精，携带8辆pt76-57", "author": "86"},
+    {"title": "布莱克曼动力", "content": "禁止携带拥有自动装弹机的载具", "author": "86"},
+    {"title": "禁止黑奴", "content": "禁止携带正面扛破超过400mm而没有自动装弹机的载具", "author": "86"}
   ],
   "support": [
     {"title": "撒粉仙人", "content": "只能携带以集束弹药为主要攻击方式的远火和火炮单位", "author": "立希"},
@@ -171,7 +211,8 @@
     {"title": "重点在机动", "content": "只能使用轮式火炮", "author": "土豆车长"},
     {"title": "拖拉机", "content": "火炮只能使用履带式", "author": "千年夜雨"},
     {"title": "快速支援", "content": "支援栏只能使用轮子载具", "author": "千年夜雨"},
-    {"title": "我的支援呢？", "content": "支援栏只能使用履带载具", "author": "千年夜雨"}
+    {"title": "我的支援呢？", "content": "只能携带履带式载具", "author": "千年夜雨"},
+    {"title": "吸吸血", "content": "禁止携带能够运输补给的载具", "author": "山羊"}
   ],
   "helo": [
     {"title": "陆军马鹿", "content": "禁止携带对空导弹", "author": "MIe"},
@@ -184,14 +225,13 @@
     {"title": "精确打击", "content": "携带的所有直升机必须进行所有可携带最多数量导弹的升级", "author": "千年夜雨"},
     {"title": "后勤单位", "content": "携带至少2架可运输补给的直升机", "author": "MIe"},
     {"title": "短视症", "content": "禁止携带地面视野超过1600m的直升机", "author": "86"},
-    {"title": "helirush", "content": "携带的所有直升机只能进行机炮吊舱或火箭弹升级", "author": "橙子皮来泡茶"},
+    {"title": "helirush", "content": "携带直升机，且携带的所有直升机只能进行机炮吊舱或火箭弹升级", "author": "橙子皮来泡茶"},
     {"title": "运输中", "content": "禁止携带不能运输人员的直升机", "author": "塞德里茨"},
     {"title": "禁飞区", "content": "禁止携带武装直升机", "author": "暖阳下的猫"},
     {"title": "黑鹰坠落", "content": "携带不少于4架的任何种类的黑鹰直升机", "author": "千年夜雨"},
     {"title": "我会一直视奸你", "content": "携带不少于4架拥有2400m地面视野的直升机", "author": "千年夜雨"},
-    {"title": "版本的眼泪", "content": "使用海步专精，只能携带挂载了巡航导弹的k52k作为唯一武装直升机", "author": "千年夜雨"},
-    {"title": "快速部署", "content": "携带至少6架能够运送人员的直升机", "author": "土豆车长"},
-    {"title": "奢侈品", "content": "直升机配件必须选最贵组合，且直升机栏用的分不得低于1000", "author": "Zola"}
+    {"title": "版本的眼泪", "content": "使用海步专精，只能携带挂载了巡航导弹的k52k作为武装直升机", "author": "千年夜雨"},
+    {"title": "快速部署", "content": "携带至少6架能够运送人员的直升机", "author": "土豆车长"}
   ],
   "air": [
     {"title": "复杂电磁环境干扰", "content": "携带4架仅进行油箱和干扰吊舱升级的ea6b", "author": "三分糖"},
@@ -227,17 +267,17 @@
     {"title": "巨大牛牛", "content": "携带超过2架拥有超过2枚空对地导弹的对地攻击机", "author": "千年夜雨"},
     {"title": "开罐器", "content": "使用空降专精，携带至少2架完全升级的A10攻击机", "author": "千年夜雨"},
     {"title": "导弹雨", "content": "携带的所有飞机拥有总共至少12发空对地导弹", "author": "千年夜雨"},
-    {"title": "Pro哥", "content": "携带至少2架配满火箭巢的飞机", "author": "土豆车长"},
-    {"title": "Never Gonna Give You Up", "content": "使用空特卡组，同时携带未装备核武器的B-1B和B-2；并携带2架仅装备2发7000m及以上射程空空导弹的F-22", "author": "塞德里茨"}
+    {"title": "Pro哥", "content": "携带至少2架能够装备并且装备了所有火箭巢的飞机", "author": "土豆车长"},
+    {"title": "Never Gonna Give You Up", "content": "使用空特专精，同时携带未装备核武器的B-1B和B-2", "author": "塞德利茨"},
+    {"title": "你再看看你重防呢", "content": "携带的所有对地攻击机必须同时装备反辐射导弹", "author": "大大的鸟"},
+    {"title": "只会这个！点击帮抢", "content": "使用海部专精，携带2架装备3发Kh-32的Tu-22M3", "author": "86"},
+    {"title": "还会这个", "content": "使用空降专精，携带2架价值为565的飞机", "author": "86"},
+    {"title": "神人，你赢了", "content": "使用特种专精，携带有挂载2枚1000磅炸弹的F-22", "author": "山羊"},
+    {"title": "折光镜", "content": "禁止携带拥有激光吊舱的的飞机", "author": "86"},
+    {"title": "石油危机", "content": "禁止携带面板燃油值大于240的飞机", "author": "86"},
+    {"title": "振翼", "content": "禁止携带可以更改飞行高度的飞机", "author": "86"},
+    {"title": "空中机动", "content": "禁止携带面板转弯半径值小于980的飞机", "author": "???"},
+    {"title": "好多群友在天上飞", "content": "使用空降专精，携带4架所有挂载栏位均不为空的A-10", "author": "大大的鸟"},
+    {"title": "多功能战机", "content": "携带的所有飞机必须同时拥有对空导弹和对地武器", "author": "zola2"}
   ]
 }
-
-
-
-
-
-
-
-
-
-
