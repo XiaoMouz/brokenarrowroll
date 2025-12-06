@@ -20,15 +20,8 @@
 
 ### 贡献流程
 
-1. Fork 本仓库
-2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启一个 Pull Request
-
-## 许可证
-
-本项目采用开源许可证，具体信息请查看 LICENSE 文件。
+方式1. Fork 本仓库 并修改 pull
+方式2. 直接朝我要合作权限，并遵守词条修改原则
 
 ## 致谢
 
