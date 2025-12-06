@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "1.2.1",
-    "last_updated": "2025-12-05 5:00:00 GMT+8",
-    "author": "QQ Group: 684515803 & 1059565376",
-    "signature": "SHA256:deck_v1_official"
+    "version": "1.3",
+    "last_updated": "2025-12-06",
+    "author": "Zola & QQ Group: 684515803 & 1059565376",
+    "log": "2025年12月6日，回退部分修改，并把删掉的作者加了回去"
   },
   "global_buffs": [
     {"title": "贫穷之始", "content": "双方以500pt开始游戏", "author": "曾经是暴白的暴黑"},
@@ -58,7 +58,7 @@
     {"title": "赌神", "content": "本方携带大于6架空空导弹射程大于等于9000的飞机", "author": "千年夜雨"},
     {"title": "往日荣光", "content": "本方携带大于等于2架AC130和KC130且拉到最大价格", "author": "千年夜雨"},
     {"title": "烟雾迷城", "content": "本方每人携带大于等于3辆可以打烟雾弹的火炮或迫击炮", "author": "千年夜雨"},
-    {"title": "填线宝宝与蛆", "content": "本方有2人携带的步兵栏单位总价值不低于2000，另外3人携带的支援栏单位总价值不低于2000", "author": "千年夜雨"},
+    {"title": "填线宝宝与蛆", "content": "本方有1人携带的步兵栏单位总价值不低于3000，另外1人携带的支援栏单位总价值不低于2500", "author": "千年夜雨"},
     {"title": "俄联邦曾经的伟大", "content": "本方至少要有4架TU22M3", "author": "土豆车长"},
     {"title": "诋毁默认卡组", "content": "本方指定1人卡组中有1栏不能出现默认卡组中出现的单位", "author": "塞德利茨"},
     {"title": "刺客信条", "content": "本方有1人无法使用隐蔽值超过1的非步兵单位", "author": "86"},
@@ -69,7 +69,7 @@
     {"title": "惊天爽蛆", "content": "本方指定1人携带同一国家的所有弹道导弹发射器，其他4人每人携带至少2架反辐射飞机", "author": "千年夜雨"},
     {"title": "有心无力", "content": "本方至多有1人可以携带反辐射机", "author": "老乔"},
     {"title": "屋顶漏雨", "content": "本方至多有2人可以携带重防", "author": "老乔"},
-    {"title": "天气晴朗", "content": "本方所有人禁止携带“台风”小车、“风暴”导弹车、“冰雹”和“龙卷风”火箭炮", "author": "86"},
+    {"title": "天气晴朗", "content": "本方所有人禁止携带台风小车、风暴导弹车、冰雹和龙卷风火箭炮", "author": "86"},
     {"title": "狂风暴雨", "content": "本方所有人禁止携带拥有两栖能力的载具", "author": "86"},
     {"title": "lord?kord!!!", "content": "本方所有人共需装备超过28具kord HMG", "author": "86"},
     {"title": "老干妈爱好者", "content": "本方所有人共需装备超过36具M2重机枪", "author": "曾经是暴白的暴黑"},
@@ -77,7 +77,9 @@
     {"title": "精锐与爬蛆", "content": "本方选择2人，1人只能携带不超过6人的步兵班组，另1人只能携带至少10人的步兵班组", "author": "86"},
     {"title": "争端开始1", "content": "本方不能同时携带乌拉尔卡车和斯崔克MGS", "author": "86"},
     {"title": "争端开始2", "content": "本方不能同时携带BMP-2和斯崔克ATGM", "author": "86"},
-    {"title": "tokyo hot", "content": "本方不能使用海军陆战队专精", "author": "86"}
+    {"title": "tokyo hot", "content": "本方不能使用海军陆战队专精", "author": "86"},
+    {"title": "合作模式", "content": "本方选1或2人只能带侦察栏、支援栏、直升机栏。其他人不能带侦察栏、支援栏。没带的栏无视下一阶段限制", "author": "zola"},
+    {"title": "无线电静默", "content": "本方需要8架以上有sead导弹的单位", "author": "zola"}
   ],
   "recon": [
     {"title": "机械哪里比得上目力雷达", "content": "禁止携带任何侦查无人机", "author": "Alkaid"},
@@ -98,10 +100,10 @@
     {"title": "鱼人夜行者", "content": "使用海部专精，携带4队PDSS", "author": "86"},
     {"title": "海摩爱好者", "content": "使用海部专精，至少携带6辆升级了瓜园-U炮塔的BTR90M", "author": "???"},
     {"title": "我说中门对狙你耳朵聋吗", "content": "使用海部专精，携带4队升级为火力支援小组的VMF", "author": "曾经是暴白的暴黑"},
-    {"title": "强壮的狙", "content": "携带的所有步兵必须装备反坦克火箭筒", "author": "Zola"},
+    {"title": "强壮的狙", "content": "携带的侦察兵必须有反器材狙击枪/反坦克筒", "author": "Zola"},
     {"title": "要饭", "content": "求求你给我一个三连吧", "author": "云洁"},
     {"title": "独苗", "content": "携带恰好一队侦查步兵", "author": "Zola"},
-    {"title": "载具大师", "content": "禁止携带侦查步兵和无人机", "author": "Zola"}
+    {"title": "载具大师", "content": "禁止携带侦查步兵", "author": "Zola"}
   ],
   "infantry": [
     {"title": "垃圾海", "content": "所有携带的步战车价格不能超过100分", "author": "塞德利茨"},
