@@ -487,6 +487,90 @@
         .search-result:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.1); }
         .search-results-container { overflow-y: auto; max-height: 400px; display: flex; flex-direction: column; gap: 8px; }
 
+        .definition-button {
+            position: fixed;
+            left: 20px;
+            bottom: 90px;
+            z-index: 1300;
+            padding: 0 18px;
+            min-height: 42px;
+            border-radius: 999px;
+            border: none;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            background: linear-gradient(135deg, #f1c40f, #ff6b6b);
+            color: #0b0c10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 18px rgba(241, 196, 15, 0.4);
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .definition-button:hover { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(241, 196, 15, 0.5); }
+
+        .definition-panel {
+            position: fixed;
+            left: 20px;
+            bottom: 150px;
+            width: 360px;
+            max-height: 60vh;
+            background: rgba(11, 12, 16, 0.95);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 15px 18px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            z-index: 1700;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.25s ease, transform 0.25s ease;
+            pointer-events: none;
+        }
+        .definition-panel.active {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+        .definition-panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+        .definition-panel-header strong {
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            color: var(--text-highlight);
+        }
+        .definition-close-btn {
+            border: none;
+            background: transparent;
+            color: var(--text-highlight);
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .definition-close-btn:hover { background: rgba(102,252,241,0.15); }
+        .definition-panel-body {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: var(--text-main);
+            max-height: calc(60vh - 70px);
+            overflow-y: auto;
+            padding-right: 4px;
+        }
+        .definition-panel-body p {
+            margin: 6px 0;
+            white-space: normal;
+        }
+
         /* --- Mobile Responsive --- */
         @media (max-width: 960px) {
             .arena { grid-template-columns: 1fr; gap: 20px; }
@@ -710,7 +794,43 @@
     </div>
 
     <!-- Side Search -->
+    <button class="definition-button" id="definitionButton">定义</button>
     <button class="side-search-button" id="sideSearchBtn">🔍</button>
+
+    <div class="definition-panel" id="definitionPanel" aria-hidden="true">
+        <div class="definition-panel-header">
+            <strong>定义内容检查</strong>
+            <button class="definition-close-btn" id="closeDefinition">关闭</button>
+        </div>
+        <div class="definition-panel-body">
+            <p>部分常用概念定义：</p>
+            <p>战斗侦查：不携带狙击枪或具有1750视野和2.5隐蔽的侦查栏步兵</p>
+            <p>载具：所有在地面上移动的轮式或履带式单位，无论是否有武装和运输人员或（和）货物的能力</p>
+            <p>装甲单位：任何一面（正、侧、背、顶）扛穿或扛破超过15mm的载具</p>
+            <p>步战车：可以运输人员的且主武器口径大于14.5mm的载具（😡我测你码，，，我的定义是完美的无暇的）</p>
+            <p>运兵车/运兵卡车：可以运输人员的不属于步战车的地面载具</p>
+            <p>（补给）卡车：只可以运输补给的无武装载具</p>
+            <p>远火：包括游戏中的多管火箭炮系统、巡航导弹发射器和弹道导弹发射器</p>
+            <p>火炮：包括游戏中支援栏位中的榴弹炮和迫击炮</p>
+            <p>重防：高空视野达到4000米的防空载具单位</p>
+            <p>近防/伴防：不属于重防的防空载具单位</p>
+            <p>隐身/匿踪单位：单位面板中隐身属性数值大于1.25的直升机和无人机、大于1.75的步兵和大于1的其他单位</p>
+            <p>温压导弹/反人员导弹：只可以对步兵类型目标发动攻击的导弹</p>
+            <p>反坦克导弹：只可以对载具类型目标发动攻击的导弹</p>
+            <p>对空导弹：可以对飞机和（或）直升机类型目标发动攻击的导弹</p>
+            <p>温压火箭筒/反人员火箭筒：可以对步兵类型目标发动攻击的火箭弹发射器</p>
+            <p>反坦克火箭筒：不可以对步兵和飞机类型目标发动攻击的火箭弹发射器</p>
+            <p>对地攻击（cas）机：装备并能够使用火箭弹、炸弹、智能炸弹、巡航导弹和空对地导弹（不包括反辐射导弹）对地面单位进行攻击的固定翼飞机</p>
+            <p>反辐射（sead）机：只能使用机炮/航炮和反辐射导弹对地面单位进行攻击的固定翼飞机</p>
+            <p>空优机：高空视野12000且携带大于等于4发对空导弹的非CAS机和非SEAD机</p>
+            <p>炸机：携带铁炸弹或者智能炸弹的飞机</p>
+            <p>粉机：携带集束炸弹的飞机</p>
+            <p>武装直升机：拥有除机枪与重机枪以外武器的直升机</p>
+            <p>运输直升机：可以运输补给或人员的直升机</p>
+            <p>反人员步兵：携带温压火箭筒、霰弹枪、闪光弹三种类型武器中的至少一种武器的步兵</p>
+            <p>反装甲步兵：携带穿深大于300mm的反坦克火箭筒的步兵</p>
+        </div>
+    </div>
 
     <div class="search-panel" id="searchPanel" aria-hidden="true">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
@@ -1262,11 +1382,26 @@
             if (show === undefined) show = !searchPanel.classList.contains('active');
             searchPanel.classList.toggle('active', show);
             searchPanel.setAttribute('aria-hidden', String(!show));
+            if (show) toggleDefinitionPanel(false);
             if (show) { searchInput.focus(); searchInput.select(); } 
             else { searchInput.value = ''; searchResults.innerHTML = ''; }
         }
         sideSearchBtn.addEventListener('click', () => toggleSearchPanel(true));
         closeSearch.addEventListener('click', () => toggleSearchPanel(false));
+
+        const definitionBtn = document.getElementById('definitionButton');
+        const definitionPanel = document.getElementById('definitionPanel');
+        const closeDefinition = document.getElementById('closeDefinition');
+
+        function toggleDefinitionPanel(show) {
+            if (!definitionPanel) return;
+            if (show === undefined) show = !definitionPanel.classList.contains('active');
+            definitionPanel.classList.toggle('active', show);
+            definitionPanel.setAttribute('aria-hidden', String(!show));
+        }
+
+        if (definitionBtn) definitionBtn.addEventListener('click', () => toggleDefinitionPanel(true));
+        if (closeDefinition) closeDefinition.addEventListener('click', () => toggleDefinitionPanel(false));
 
         function debounce(fn, wait = 180) {
             let t;
@@ -1325,5 +1460,4 @@
     </script>
 </body>
 </html>
-
 
